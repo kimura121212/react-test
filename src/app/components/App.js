@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from '../logo.svg';
+import AddTodo from "../../common/AddTodo";
+import TodoList from "../../common/TodoList";
+import VisibilityFilters from "../../common/VisibilityFilters";
 import '../App.css';
+
 
 function App() {
   return (
@@ -10,6 +14,12 @@ function App() {
         <p>
           App
         </p>
+        <div className="todo-app">
+          <h1>Todo List</h1>
+          <AddTodo />
+          <TodoList />
+          <VisibilityFilters />
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
